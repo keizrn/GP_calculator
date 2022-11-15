@@ -16,7 +16,7 @@ def clac_start():
         result = mc.do_it()
         view.view_data(result, "resalt")
         
-    if info == 2:
+    elif info == 2:
         value_a = view.get_float_value()
         value_b = view.get_float_value()
         action = view.get_action()
@@ -25,13 +25,4 @@ def clac_start():
         result = mr.do_it()
         view.view_data(result, "resalt")
         logger.write_log(info, value_a, value_b, action, result)
-    else:
-        print('ERR')
-
-    
-    
-
-
-
-
-
+    else: print('Error')
