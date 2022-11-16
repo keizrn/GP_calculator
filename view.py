@@ -1,8 +1,8 @@
 from decimal import Decimal
 
 
-def view_data(data, title):
-    print(f'{title} = {data}')
+def view_data(data,value_a, value_b, action):
+    print(f'{value_a}{action}{value_b} = {data}')
 
 
 def get_float_value():
