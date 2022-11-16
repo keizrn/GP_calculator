@@ -19,4 +19,7 @@ def do_it():
     if act == '*':
         return x * y
     if act == '/':
-        return x / y
+        try:
+            return x / y
+        except ZeroDivisionError:
+            print('Деление на ноль')
