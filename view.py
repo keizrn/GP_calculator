@@ -29,6 +29,15 @@ def get_number_info():
 def menu_error():
     print('Ошибка выбора меню')
 
+def input_error(input_text):
+    flag = False
+    while not flag:
+        try:
+            value = int(input(f'{input_text}'))
+            flag = True
+        except ValueError:
+                print('Введено не число')
+                return value
 
 mode = {'+': 'сумма', '-': 'разность', '*': 'произведение', '/': 'деление'}
 info = {1: 'комплексные', 2: 'рациональные'}
