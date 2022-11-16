@@ -14,11 +14,11 @@ def init(a, b, action):
 def do_it():
     if act == '+':
         return x + y
-    elif act == '-':
+    if act == '-':
         return x - y
-    elif act == '*':
+    if act == '*':
         return x * y
-    elif act == '/':
+    if act == '/':
         return x / y
 
 def calculate():
