@@ -23,7 +23,7 @@ def calc_start():
             view.new_line()
             model.init(value_a, value_b, action)
             result = model.do_it()
-            view.view_data(result, "result")
+            view.view_data(result, value_a, value_b, action)
             logger.write_log(info, value_a, value_b, action, result)
             view.new_line()
         except:
