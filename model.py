@@ -20,9 +20,3 @@ def do_it():
         return x * y
     if act == '/':
         return x / y
-
-def calculate():
- try:
-        return do_it()
-    except ZeroDivisionError :
-        print ('Деление на 0')
