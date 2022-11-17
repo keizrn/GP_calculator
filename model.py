@@ -1,3 +1,4 @@
+import view
 
 x = 0
 y = 0
@@ -22,4 +23,4 @@ def do_it():
         try:
             return x / y
         except ZeroDivisionError:
-            print('Деление на ноль')
+            view.text_line(4)
