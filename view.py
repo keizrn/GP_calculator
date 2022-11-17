@@ -9,8 +9,14 @@ def get_float_value():
     '''
     Пользователь вводит число
     '''
-    return Decimal(input('value = '))
-
+    flag = False
+    while not flag:
+        try:
+            number = float(input("Число = "))
+            flag = True
+        except ValueError:
+            print("Ошибка, попробуйте еще раз!")
+    return number
 
 def get_complex_value():
     '''
