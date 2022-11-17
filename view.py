@@ -24,13 +24,18 @@ def get_action():
 
 
 def get_number_info():
-    '''Выбор типа данных для работы,
-    комплексные = 1, рациональные = 2
-    выход из программы = 3'''
-    return int(input('Введите тип данных:\n'
+    flag = False
+    while not flag:
+        try:
+            number = int(input('Введите тип данных:\n'
                      'Комплексные = 1\n'
                      'Рациональные = 2\n'
                      'Выход из программы = 3: '))
+            if 0 < number < 4:
+                flag = True
+        except ValueError:
+            print("Ошибка, попробуйте еще раз!")
+    return number
 
 
 def menu_error():
