@@ -26,8 +26,9 @@ def get_action():  # ввод арифметического действия
     flag_sign = False
     while not flag_sign:
         temp_sign = input('Введите действие: + - * /  = ')
-        flag_sign = True if temp_sign == '+' or temp_sign == '-' or temp_sign == '*' or temp_sign == '/' \
-            else text_line(5)
+        flag_sign = temp_sign in mode.keys()
+        if not flag_sign:
+            text_line(5)
     return temp_sign
 
 def get_number_info():  # основное меню
