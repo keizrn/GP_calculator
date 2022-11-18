@@ -4,7 +4,7 @@ x = 0
 y = 0
 act = ''
 
-def init(a, b, action):
+def init(a, b, action):  # присвоение значений глобальным переменным
     global x
     global y
     global act
@@ -12,7 +12,7 @@ def init(a, b, action):
     y = b
     act = action
 
-def do_it():
+def do_it():  # основной вычислительный блок
     if act == '+':
         return x + y
     if act == '-':
